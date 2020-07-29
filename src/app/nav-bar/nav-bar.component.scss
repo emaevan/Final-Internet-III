@@ -1,0 +1,53 @@
+@import '../../styles.scss';
+
+.container{
+    @include roundContainer(1em, -1);
+    margin: 2% 0;
+    width: 98.5%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+
+    .botonera{
+        margin: 0 3%;
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+
+        a{
+            width: 3vw;
+
+            &:hover{
+                img{
+                    opacity: .75;
+                }
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .barraBusqueda{
+        button{
+            width: 7.5%;
+            height: 100%;
+            background-color: rgb(120,120,120);
+            border: 1px solid rgb(80,80,80);
+            border-radius: 32px 0 0 32px;
+
+            img{
+                width: 100%;
+            }
+        }
+        
+        input{
+            height: 86%;
+            width: 90%;
+            position: relative;
+            bottom: 15%;
+        }
+    }
+}

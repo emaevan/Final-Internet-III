@@ -1,0 +1,13 @@
+<div class="container">
+    <img [src]="imageList[ selectedImage ]">
+    <button class="indexButton"
+        *ngFor="let item of imageList; let i = index"
+        [attr.data-index]="i"
+        (click)="changeImage(i)"
+        >
+
+        {{i+1}}
+    </button>
+
+    <button class="nextImage" (click)="nextImage()">></button>
+</div>

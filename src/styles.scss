@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{ //Para sacar los espacios entre todos los elementos y darle color al fondo
+    margin: 0 auto;
+    padding: 0 auto;
+    position: relative;
+    background-image: url("https://i.imgur.com/U7v8Dl6.jpg");
+}
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap'); //Permanent Marker
+
+//CSS Prefabricado
+@mixin roundContainer ($border, $z){
+    //Colores del interior
+    position: relative;
+    background: linear-gradient(var(--azul), var(--azulOscuro));
+    padding: 8px;
+    border-radius: $border;
+
+    &:before { //Border exterior
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: calc( #{$z} - 1 );
+        margin: -5px;
+        border-radius: inherit;
+        background: linear-gradient(var(--azulOscuro), var(--azul));
+    }
+}
+
+//Variables globales
+:root{
+    --azul: rgb(0, 110, 150);
+    --azulOscuro: rgb(0, 70, 100);
+}

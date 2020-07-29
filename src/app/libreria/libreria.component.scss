@@ -1,0 +1,16 @@
+@import '../../styles.scss';
+
+.container{
+    @include roundContainer(2em, -1);
+    padding-bottom: 5vh;
+
+    h1{
+        background: linear-gradient(var(--azul), var(--azulOscuro));
+        padding: .25em;
+        text-indent: 1em;
+        border-radius: 1em;
+        box-shadow: inset 0px 2px 5px 5px var(--azulOscuro);
+        color: white;
+        font-family: 'Patrick Hand', cursive;
+    }
+}

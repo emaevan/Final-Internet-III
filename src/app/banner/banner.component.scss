@@ -1,0 +1,30 @@
+@import '../../styles.scss';
+
+body{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.banner{
+    @include roundContainer(2em, -1);
+
+    width: 50vw;
+    height: 17.5vw;
+    
+
+    img{
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+        border-radius: 2em;
+    }
+}
+
+.contenedor{
+    margin-top: 5%;
+    width: 100%;
+
+    div{
+        display: inline-block; //Para tener los elementos uno al lado del otro
+    }
+}

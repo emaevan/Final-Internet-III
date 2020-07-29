@@ -1,0 +1,44 @@
+@import '../../styles.scss';
+
+.container{
+    @include roundContainer(2em, -1);
+    position: relative;
+
+    .titulo{
+        position: relative;
+        background: linear-gradient(var(--azul), var(--azulOscuro));
+        padding: 8px;
+        border-radius: 1em;
+        margin: 2% 35%;
+        border: solid 8px var(--azulOscuro);
+
+        h1{
+            margin: 0 auto;
+            font-family: 'Patrick Hand', cursive;
+            font-size: 4em;
+            text-align: center;
+            color: rgb(0,150,255);
+            text-shadow: 0px 4px 0 rgb(0,50,125);
+        }
+    }
+
+    .containerTexto{
+        background-color: white;
+        border-radius: 2em;
+        margin: 5%;
+        width: 80%;
+        padding: 2% 5%;
+
+        h3{
+            font-family: 'Patrick Hand', cursive;
+            text-align: center;
+            font-size: 3em;
+        }
+
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            line-height: 4.5vh;
+        }
+    }
+}

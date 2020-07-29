@@ -1,0 +1,15 @@
+@import '../../styles.scss';
+
+.container{
+    @include roundContainer(3em, -1);
+    padding: 2vh 3vw;
+    margin-top: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+
+    h1{
+        font-size: 2em;
+        margin: 0 auto;
+    }
+}

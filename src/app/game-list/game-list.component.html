@@ -1,0 +1,9 @@
+<div class="container">
+    {{ elegirLista() }}
+    <div class="deco">
+        <app-game-item
+            *ngFor="let item of listaSeleccionada"
+            [Juego]="item"
+        ></app-game-item>
+    </div>
+</div>

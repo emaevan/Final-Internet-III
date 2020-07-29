@@ -1,0 +1,16 @@
+<div class="containerMain">
+    <div class="containerHeader">
+        <app-logo></app-logo>
+        <app-banner></app-banner>
+    </div>
+
+    <div class="containerBody">
+        <app-nav-bar (response)="cambiarIndex($event)"></app-nav-bar>
+        <app-bienvenidos *ngIf="divIndex == 0"></app-bienvenidos>
+        <app-libreria *ngIf="divIndex == 1"></app-libreria>
+    </div>
+
+    <div class="containerFooter">
+        <app-footer></app-footer>
+    </div>
+</div>
